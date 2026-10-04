@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ашка чакыруу — 25.10.2026</title>
+<meta name="description" content="Сиздерди ашка чакырабыз. 25.10.2026, саат 09:00, «Ак сарай» тойканасы.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ашка чакыруу — 25.10.2026">
+<meta property="og:description" content="Сиздерди ашка чакырабыз. 25.10.2026, саат 09:00, «Ак сарай» тойканасы.">
+<meta property="og:image" content="og-ash-25-10-2026.webp">
+<meta name="theme-color" content="#0F3B2E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0F3B2E;
+  --bg-deep: #0A2C22;
+  --ink: #F7F3EA;
+  --muted: #C9D0C6;
+  --gold: #C9A961;
+  --gold-soft: rgba(201, 169, 97, .32);
+  --line: rgba(247, 243, 234, .16);
+  box-sizing: border-box;
+  color-scheme: dark;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+*, *::before, *::after { box-sizing: inherit; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(201, 169, 97, .08), transparent 34rem),
+    var(--bg);
+  color: var(--ink);
+  font-family: "PT Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  opacity: .13;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23C9A961' stroke-width='.8'%3E%3Cpath d='M48 10 57 37 86 48 57 59 48 86 39 59 10 48 39 37Z'/%3E%3Cpath d='M28 28h40v40H28z'/%3E%3Cpath d='M28 28h40v40H28z' transform='rotate(45 48 48)'/%3E%3Ccircle cx='48' cy='48' r='7'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+main {
+  width: min(100%, 520px);
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+.panel {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 56px 0;
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.panel.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bismillah {
+  margin: 0;
+  color: var(--gold);
+  direction: rtl;
+  font-family: "Amiri", "Times New Roman", serif;
+  font-size: clamp(30px, 8.5vw, 42px);
+  line-height: 1.8;
+}
+
+.ornament {
+  width: 54px;
+  height: 54px;
+  margin: 28px auto;
+  color: var(--gold);
+}
+
+h1 {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(44px, 13vw, 64px);
+  font-weight: 600;
+  letter-spacing: .02em;
+  line-height: 1.02;
+  text-transform: uppercase;
+}
+
+.scroll-hint {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 56px;
+  color: var(--muted);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.scroll-hint svg {
+  width: 18px;
+  height: 18px;
+  animation: drift 2.4s ease-in-out infinite;
+}
+
+@keyframes drift {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+.arch {
+  position: relative;
+  width: 100%;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 110px 28px 56px;
+}
+
+.arch svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  color: var(--gold);
+}
+
+.invite-text,
+.dua {
+  position: relative;
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(23px, 6.4vw, 29px);
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.name {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.date-big {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(56px, 17vw, 86px);
+  font-variant-numeric: lining-nums;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.date-big span {
+  display: block;
+  margin-top: 12px;
+  color: var(--gold);
+  font-size: .46em;
+  letter-spacing: .16em;
+}
+
+.when {
+  margin: 24px 0 0;
+  font-size: 21px;
+}
+
+.when strong {
+  color: var(--gold);
+}
+
+.rule {
+  width: 64px;
+  height: 1px;
+  margin: 36px auto;
+  background: var(--gold-soft);
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 330px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.countdown div {
+  min-width: 0;
+  padding: 10px 8px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.countdown b {
+  display: block;
+  color: var(--ink);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.place-name {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(40px, 11vw, 56px);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.place-sub {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 19px;
+}
+
+.village {
+  margin: 18px 0 34px;
+  font-size: 21px;
+}
+
+.map-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 330px;
+}
+
+.button {
+  display: block;
+  min-height: 56px;
+  padding: 15px 18px;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  background: var(--gold);
+  color: var(--bg-deep);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.button.secondary {
+  background: transparent;
+  color: var(--ink);
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+
+.ayah {
+  margin: 0;
+  color: var(--gold);
+  font-family: "PT Sans", system-ui, sans-serif;
+  font-size: clamp(21px, 5.8vw, 27px);
+  line-height: 1.65;
+}
+
+.dua {
+  margin-top: 28px;
+}
+
+.amin {
+  display: block;
+  margin-top: 10px;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.sign {
+  margin: 44px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.hosts {
+  display: block;
+  margin-top: 8px;
+  color: var(--ink);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(32px, 9vw, 40px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@media (min-width: 720px) {
+  body {
+    background:
+      linear-gradient(90deg, rgba(10, 44, 34, .72), transparent 26%, transparent 74%, rgba(10, 44, 34, .72)),
+      var(--bg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .panel {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .scroll-hint svg { animation: none; }
+}
+</style>
+</head>
+<body>
+<main>
+  <section class="panel" aria-label="Башы">
+    <p class="bismillah" lang="ar">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+    <svg class="ornament" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2">
+      <rect x="10" y="10" width="28" height="28"></rect>
+      <rect x="10" y="10" width="28" height="28" transform="rotate(45 24 24)"></rect>
+      <circle cx="24" cy="24" r="5"></circle>
+    </svg>
+    <h1>АШКА<br>ЧАКЫРУУ</h1>
+    <a class="scroll-hint" href="#chakyruu">
+      Төмөн сыдырыңыз
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <path d="M6 9l6 6 6-6"></path>
+      </svg>
+    </a>
+  </section>
+
+  <section class="panel" id="chakyruu" aria-label="Чакыруу">
+    <div class="arch">
+      <svg viewBox="0 0 400 560" preserveAspectRatio="none" aria-hidden="true" fill="none" stroke="currentColor">
+        <path stroke-width="1.4" vector-effect="non-scaling-stroke" d="M10 560 V200 C10 110 120 60 200 8 C280 60 390 110 390 200 V560"></path>
+        <path stroke-width=".8" vector-effect="non-scaling-stroke" opacity=".55" d="M24 560 V204 C24 122 128 76 200 26 C272 76 376 122 376 204 V560"></path>
+      </svg>
+      <p class="invite-text">
+        Сиздерди атам <span class="name">Рысмаматтын</span> ашына, апам <span class="name">Бааркандын</span> жылдык ашына, укам <span class="name">Ажибектин</span> ашына чакырабыз.
+      </p>
+    </div>
+  </section>
+
+  <section class="panel" aria-label="Күнү жана убактысы">
+    <p class="date-big">25.10.2026</p>
+    <p class="when">Жекшемби — Саат <strong>09:00</strong></p>
+    <div class="rule"></div>
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div><b id="cd-d">-</b>күн</div>
+      <div><b id="cd-h">-</b>саат</div>
+      <div><b id="cd-m">-</b>мүнөт</div>
+    </div>
+  </section>
+
+  <section class="panel" aria-label="Жер">
+    <p class="place-name">«Ак сарай»</p>
+    <p class="place-sub">тойканасы</p>
+    <p class="village">Жаңы арык</p>
+    <div class="map-actions">
+      <a class="button" href="https://2gis.kg/search/%D0%90%D0%BA%20%D1%81%D0%B0%D1%80%D0%B0%D0%B9%20%D1%82%D0%BE%D0%B9%D0%BA%D0%B0%D0%BD%D0%B0%D1%81%D1%8B%20%D0%96%D0%B0%D2%A3%D1%8B%20%D0%B0%D1%80%D1%8B%D0%BA" target="_blank" rel="noopener">Даректи картадан көрүү</a>
+      <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=%D0%90%D0%BA%20%D1%81%D0%B0%D1%80%D0%B0%D0%B9%20%D1%82%D0%BE%D0%B9%D0%BA%D0%B0%D0%BD%D0%B0%D1%81%D1%8B%20%D0%96%D0%B0%D2%A3%D1%8B%20%D0%B0%D1%80%D1%8B%D0%BA" target="_blank" rel="noopener">Google Maps</a>
+    </div>
+  </section>
+
+  <section class="panel" aria-label="Аяктоо">
+    <p class="ayah">Инна лиллахи ва инна илайхи ражиун.</p>
+    <p class="dua">Аллах таала маркумдардын жаткан жерин жайлуу, арууагын шат кылсын.<span class="amin">Амин!</span></p>
+    <p class="sign">Сиздерди терең урматтоо менен,<span class="hosts">Адилбек &amp; Болдукан</span></p>
+  </section>
+</main>
+
+<script>
+(function () {
+  var panels = Array.prototype.slice.call(document.querySelectorAll(".panel"));
+
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.22 });
+
+    panels.forEach(function (panel) {
+      observer.observe(panel);
+    });
+  } else {
+    panels.forEach(function (panel) {
+      panel.classList.add("is-visible");
+    });
+  }
+
+  var target = new Date("2026-10-25T09:00:00+06:00").getTime();
+  var countdown = document.getElementById("countdown");
+  var days = document.getElementById("cd-d");
+  var hours = document.getElementById("cd-h");
+  var minutes = document.getElementById("cd-m");
+
+  function tick() {
+    var diff = target - Date.now();
+
+    if (diff <= 0) {
+      countdown.style.display = "none";
+      return;
+    }
+
+    days.textContent = Math.floor(diff / 86400000);
+    hours.textContent = Math.floor(diff % 86400000 / 3600000);
+    minutes.textContent = Math.floor(diff % 3600000 / 60000);
+  }
+
+  tick();
+  window.setInterval(tick, 30000);
+})();
+</script>
+</body>
+</html>
